@@ -1,0 +1,16 @@
+.containar {
+    width: 50%;
+
+    margin: 25%;
+    margin-top: 5%;
+}
+
+.error {
+    color: white;
+    font-size: large;
+}
+
+.alert {
+    background-color: rgba(255, 0, 0, 0.574);
+    width: 50%;
+}

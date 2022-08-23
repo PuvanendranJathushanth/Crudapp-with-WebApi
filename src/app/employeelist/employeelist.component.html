@@ -1,0 +1,27 @@
+<div class="tableview">
+  <table class="table" *ngIf="employees && employees.length > 0">
+    <thead>
+      <tr>
+        <th></th>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phonenumber</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let employee of employees; let i = index">
+        <th>{{i+1}}</th>
+        <th >{{employee.id}}</th>
+        <td>{{employee.name}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.phoneNumber}}</td>
+        <td><a routerLink="/edituser/{{employee.id}}">view</a></td>
+      </tr>
+    </tbody>
+    
+  </table>
+  <p *ngIf="employees.length <= 0" class="notfoundmss">No Employees Found</p>
+</div>
